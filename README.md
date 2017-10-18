@@ -1,2 +1,2 @@
 # HCI-Raspi
-Using facial recognition with the Rapsberry pi
+Using facial recognition with the Raspberry pi
