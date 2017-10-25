@@ -1,0 +1,16 @@
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.pdb
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.xml
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Create.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Form1.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Resources.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.exe
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.xml
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.pdb
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.FaceCapture.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
+C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
