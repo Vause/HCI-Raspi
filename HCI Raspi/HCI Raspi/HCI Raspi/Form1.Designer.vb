@@ -31,37 +31,41 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(187, 27)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(118, 33)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(229, 17)
+        Me.Label1.Size = New System.Drawing.Size(414, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Facial Recognition Security System"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(254, 111)
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(123, 111)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(128, 46)
+        Me.Button1.Size = New System.Drawing.Size(409, 46)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Create User"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(254, 195)
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(123, 218)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(128, 46)
+        Me.Button2.Size = New System.Drawing.Size(409, 46)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "View / Edit User"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(254, 285)
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(123, 326)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(128, 46)
+        Me.Button3.Size = New System.Drawing.Size(409, 46)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Log"
+        Me.Button3.Text = "View Logs"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1

@@ -14,3 +14,20 @@ C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.
 C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
 C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
 C:\Users\dadio\Desktop\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.exe
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.xml
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.pdb
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.pdb
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.xml
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbprojResolveAssemblyReference.cache
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Create.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.FaceCapture.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Form1.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Resources.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
+C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache

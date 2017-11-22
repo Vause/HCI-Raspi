@@ -22,6 +22,7 @@ Partial Class FaceCapture
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FaceCapture))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -33,7 +34,7 @@ Partial Class FaceCapture
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.HCI_Raspi.My.Resources.Resources.vause
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(24, 22)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(257, 252)
@@ -43,27 +44,27 @@ Partial Class FaceCapture
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(27, 319)
+        Me.Button1.Location = New System.Drawing.Point(20, 319)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 40)
+        Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(195, 319)
+        Me.Button2.Location = New System.Drawing.Point(227, 319)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(109, 40)
+        Me.Button2.Size = New System.Drawing.Size(150, 50)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Retake Image"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(373, 319)
+        Me.Button3.Location = New System.Drawing.Point(441, 319)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 40)
+        Me.Button3.Size = New System.Drawing.Size(150, 50)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Create User"
         Me.Button3.UseVisualStyleBackColor = True
