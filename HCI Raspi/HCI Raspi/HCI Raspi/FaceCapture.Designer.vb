@@ -27,8 +27,9 @@ Partial Class FaceCapture
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.FName = New System.Windows.Forms.Label()
+        Me.LName = New System.Windows.Forms.Label()
+        Me.SL = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,32 +70,41 @@ Partial Class FaceCapture
         Me.Button3.Text = "Create User"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label1
+        'FName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(308, 46)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(248, 17)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Does this image make you nauseous?"
+        Me.FName.AutoSize = True
+        Me.FName.Location = New System.Drawing.Point(339, 22)
+        Me.FName.Name = "FName"
+        Me.FName.Size = New System.Drawing.Size(51, 17)
+        Me.FName.TabIndex = 4
+        Me.FName.Text = "Label1"
         '
-        'Label2
+        'LName
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(318, 148)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(174, 17)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Has science gone too far?"
-        Me.Label2.Visible = False
+        Me.LName.AutoSize = True
+        Me.LName.Location = New System.Drawing.Point(339, 78)
+        Me.LName.Name = "LName"
+        Me.LName.Size = New System.Drawing.Size(51, 17)
+        Me.LName.TabIndex = 5
+        Me.LName.Text = "Label2"
+        '
+        'SL
+        '
+        Me.SL.AutoSize = True
+        Me.SL.Location = New System.Drawing.Point(339, 137)
+        Me.SL.Name = "SL"
+        Me.SL.Size = New System.Drawing.Size(51, 17)
+        Me.SL.TabIndex = 6
+        Me.SL.Text = "Label3"
         '
         'FaceCapture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(613, 413)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.SL)
+        Me.Controls.Add(Me.LName)
+        Me.Controls.Add(Me.FName)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -111,6 +121,7 @@ Partial Class FaceCapture
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents FName As Label
+    Friend WithEvents LName As Label
+    Friend WithEvents SL As Label
 End Class

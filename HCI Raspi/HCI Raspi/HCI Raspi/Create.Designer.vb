@@ -98,7 +98,7 @@ Partial Class Create
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Alpha", "Beta", "Gamma", "Omega"})
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
         Me.ComboBox1.Location = New System.Drawing.Point(314, 210)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(168, 24)

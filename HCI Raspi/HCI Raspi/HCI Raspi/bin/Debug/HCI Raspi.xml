@@ -37,5 +37,90 @@ HCI Raspi
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.EmployeesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.LogsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.EmployeesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.LogsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.EmployeesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet.LogsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.EmployeesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.LogsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.UpdateAll(HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:HCI_Raspi._C__Users_Ruben_Desktop_HCI_master_HCI_Raspi_master_HCIRaspi_dbDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>
