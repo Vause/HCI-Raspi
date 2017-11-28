@@ -29,17 +29,18 @@ Partial Class Finish
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(78, 34)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label1.Location = New System.Drawing.Point(57, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 17)
+        Me.Label1.Size = New System.Drawing.Size(162, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "User Created"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(95, 155)
+        Me.Button1.Location = New System.Drawing.Point(62, 95)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Home"
         Me.Button1.UseVisualStyleBackColor = True
@@ -48,11 +49,10 @@ Partial Class Finish
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(282, 253)
+        Me.ClientSize = New System.Drawing.Size(282, 194)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Finish"
-        Me.Text = "Finish"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

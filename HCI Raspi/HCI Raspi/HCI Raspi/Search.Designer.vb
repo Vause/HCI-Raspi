@@ -38,29 +38,32 @@ Partial Class Search
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label1.Location = New System.Drawing.Point(31, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 17)
+        Me.Label1.Size = New System.Drawing.Size(170, 20)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "First Name"
+        Me.Label1.Text = "Employee First Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label2.Location = New System.Drawing.Point(31, 72)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 17)
+        Me.Label2.Size = New System.Drawing.Size(169, 20)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Last Name"
+        Me.Label2.Text = "Employee Last Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label3.Location = New System.Drawing.Point(31, 187)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(21, 17)
+        Me.Label3.Size = New System.Drawing.Size(104, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "ID"
+        Me.Label3.Text = "Employee ID"
         '
         'TextBox1
         '
@@ -85,18 +88,18 @@ Partial Class Search
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(34, 265)
+        Me.Button1.Location = New System.Drawing.Point(12, 277)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(254, 265)
+        Me.Button2.Location = New System.Drawing.Point(215, 277)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(150, 50)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Search"
         Me.Button2.UseVisualStyleBackColor = True
@@ -104,11 +107,12 @@ Partial Class Search
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label4.Location = New System.Drawing.Point(31, 119)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(97, 17)
+        Me.Label4.Size = New System.Drawing.Size(193, 20)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Security Level"
+        Me.Label4.Text = "Employee Security Level"
         '
         'TextBox4
         '
@@ -120,9 +124,10 @@ Partial Class Search
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.Label5.Location = New System.Drawing.Point(165, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(29, 17)
+        Me.Label5.Size = New System.Drawing.Size(36, 20)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "OR"
         '

@@ -65,7 +65,7 @@ Partial Class Create
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(24, 291)
+        Me.Button1.Location = New System.Drawing.Point(12, 277)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 3
@@ -74,7 +74,7 @@ Partial Class Create
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(332, 291)
+        Me.Button2.Location = New System.Drawing.Point(340, 277)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(150, 50)
         Me.Button2.TabIndex = 4
@@ -99,9 +99,9 @@ Partial Class Create
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(314, 210)
+        Me.ComboBox1.Location = New System.Drawing.Point(391, 210)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(168, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(91, 24)
         Me.ComboBox1.TabIndex = 7
         '
         'Label4
@@ -118,7 +118,7 @@ Partial Class Create
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 384)
+        Me.ClientSize = New System.Drawing.Size(502, 339)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox2)

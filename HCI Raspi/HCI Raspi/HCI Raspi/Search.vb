@@ -36,4 +36,8 @@ Public Class Search
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
+
+    Private Sub Search_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Form1.Hide()
+    End Sub
 End Class

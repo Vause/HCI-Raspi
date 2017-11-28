@@ -39,3 +39,30 @@ C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi
 C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.xml
 C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Ruben\Desktop\HCI-master\HCI-Raspi-master\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.exe
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.pdb
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.pdb
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.dll
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.dll
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.xml
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Create.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.FaceCapture.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Form1.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Resources.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbprojResolveAssemblyReference.cache
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Start.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Instructions.resources

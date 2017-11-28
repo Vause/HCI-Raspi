@@ -110,7 +110,6 @@ Partial Class FaceCapture
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FaceCapture"
-        Me.Text = "FaceCapture"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
