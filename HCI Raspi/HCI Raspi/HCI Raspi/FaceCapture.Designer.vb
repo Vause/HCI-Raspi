@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FaceCapture
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,16 +20,13 @@ Partial Class FaceCapture
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FaceCapture))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.FName = New System.Windows.Forms.Label()
-        Me.LName = New System.Windows.Forms.Label()
-        Me.SL = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -70,41 +67,11 @@ Partial Class FaceCapture
         Me.Button3.Text = "Create User"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'FName
-        '
-        Me.FName.AutoSize = True
-        Me.FName.Location = New System.Drawing.Point(339, 22)
-        Me.FName.Name = "FName"
-        Me.FName.Size = New System.Drawing.Size(51, 17)
-        Me.FName.TabIndex = 4
-        Me.FName.Text = "Label1"
-        '
-        'LName
-        '
-        Me.LName.AutoSize = True
-        Me.LName.Location = New System.Drawing.Point(339, 78)
-        Me.LName.Name = "LName"
-        Me.LName.Size = New System.Drawing.Size(51, 17)
-        Me.LName.TabIndex = 5
-        Me.LName.Text = "Label2"
-        '
-        'SL
-        '
-        Me.SL.AutoSize = True
-        Me.SL.Location = New System.Drawing.Point(339, 137)
-        Me.SL.Name = "SL"
-        Me.SL.Size = New System.Drawing.Size(51, 17)
-        Me.SL.TabIndex = 6
-        Me.SL.Text = "Label3"
-        '
         'FaceCapture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(613, 413)
-        Me.Controls.Add(Me.SL)
-        Me.Controls.Add(Me.LName)
-        Me.Controls.Add(Me.FName)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -112,7 +79,6 @@ Partial Class FaceCapture
         Me.Name = "FaceCapture"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -120,7 +86,4 @@ Partial Class FaceCapture
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents FName As Label
-    Friend WithEvents LName As Label
-    Friend WithEvents SL As Label
 End Class

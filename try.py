@@ -4,7 +4,7 @@ import sqlite3
 
 cam = cv2.VideoCapture(0)
 
-cv2.namedWindow("test")
+#cv2.namedWindow("test")
 db = sqlite3.connect('HCIRaspi.db')
 cursor = db.cursor()
 cursor.execute('''SELECT ID, FName, LName, SecurityLevel FROM Employees ORDER BY ID DESC''')
