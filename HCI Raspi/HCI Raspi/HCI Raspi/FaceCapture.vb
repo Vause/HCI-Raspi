@@ -7,6 +7,8 @@ Public Class FaceCapture
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        PictureBox1.Image.Dispose()
+        PictureBox1.Image = Nothing
         Finish.Show()
         Me.Close()
     End Sub
@@ -40,7 +42,8 @@ Public Class FaceCapture
         End Try
         System.Diagnostics.Process.Start("C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\facetrainer.py")
         System.Threading.Thread.Sleep(10000)
-        Dim n As Image
-        PictureBox1.Image = n.FromFile("C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\data\opencv_frame_" & Create.TextBox1.Text & "_" & Create.TextBox2.Text & "_" & Create.ComboBox1.Text & ".png")
+        PictureBox1.Image = Image.FromFile("C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\data\opencv_frame_" & Create.TextBox1.Text & "_" & Create.TextBox2.Text & "_" & Create.ComboBox1.Text & ".png")
+        System.Threading.Thread.Sleep(1000)
+        System.Diagnostics.Process.Start("C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\trainer.py")
     End Sub
 End Class

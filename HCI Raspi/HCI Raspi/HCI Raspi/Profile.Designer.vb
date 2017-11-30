@@ -31,6 +31,9 @@ Partial Class Profile
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,11 +114,41 @@ Partial Class Profile
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 13
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(27, 223)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(159, 23)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Retake Profile Picture"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(128, 360)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(198, 23)
+        Me.Button4.TabIndex = 15
+        Me.Button4.Text = "Calibrate Facial Recognition"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(213, 293)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(51, 17)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Label4"
+        '
         'Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(460, 434)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -142,4 +175,7 @@ Partial Class Profile
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Label4 As Label
 End Class

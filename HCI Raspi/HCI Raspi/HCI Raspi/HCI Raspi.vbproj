@@ -167,6 +167,12 @@
     <Compile Include="Profile.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SaveChanges.Designer.vb">
+      <DependentUpon>SaveChanges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SaveChanges.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Search.Designer.vb">
       <DependentUpon>Search.vb</DependentUpon>
     </Compile>
@@ -212,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveChanges.resx">
+      <DependentUpon>SaveChanges.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.vb</DependentUpon>
