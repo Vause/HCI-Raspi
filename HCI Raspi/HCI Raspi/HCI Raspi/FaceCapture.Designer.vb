@@ -64,7 +64,7 @@ Partial Class FaceCapture
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(150, 50)
         Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Create User"
+        Me.Button3.Text = "Create Profile"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'FaceCapture

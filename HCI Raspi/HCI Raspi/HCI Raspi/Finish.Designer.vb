@@ -30,11 +30,11 @@ Partial Class Finish
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(57, 30)
+        Me.Label1.Location = New System.Drawing.Point(48, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(162, 29)
+        Me.Label1.Size = New System.Drawing.Size(181, 29)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "User Created"
+        Me.Label1.Text = "Profile Created"
         '
         'Button1
         '

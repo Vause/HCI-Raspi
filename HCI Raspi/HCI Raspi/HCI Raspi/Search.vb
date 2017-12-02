@@ -51,6 +51,8 @@ Public Class Search
     End Sub
 
     Private Sub Search_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
+
         Form1.Hide()
     End Sub
 End Class

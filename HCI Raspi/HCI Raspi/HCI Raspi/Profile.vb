@@ -36,6 +36,9 @@ Public Class Profile
     End Sub
 
     Private Sub Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
+
+
 
         TextBox1.Text = Search.First.ToString()
         TextBox2.Text = Search.Last.ToString()
@@ -59,7 +62,14 @@ Public Class Profile
         PictureBox2.Image = Image.FromFile("C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\data\opencv_frame_" & TextBox1.Text & "_" & TextBox2.Text & "_" & ComboBox1.Text & ".png")
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
+
+    Private Sub btnDelete_Click_1(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Dim result As Integer = MessageBox.Show("Are you sure you want to delete this profile?", "caption", MessageBoxButtons.YesNo)
+        If result = DialogResult.No Then
+            'nothing happens
+        ElseIf result = DialogResult.Yes Then
+            'code to delete the profile
+        End If
     End Sub
 End Class

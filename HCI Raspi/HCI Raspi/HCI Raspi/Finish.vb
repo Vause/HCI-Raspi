@@ -4,4 +4,9 @@
         Me.Close()
         Create.Close()
     End Sub
+
+    Private Sub Finish_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
+
+    End Sub
 End Class

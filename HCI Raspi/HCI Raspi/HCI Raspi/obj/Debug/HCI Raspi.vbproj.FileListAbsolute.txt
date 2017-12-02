@@ -63,7 +63,6 @@ C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debu
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
-C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbprojResolveAssemblyReference.cache
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Start.resources
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Instructions.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
@@ -94,3 +93,4 @@ C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Rasp
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Start.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
+C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources

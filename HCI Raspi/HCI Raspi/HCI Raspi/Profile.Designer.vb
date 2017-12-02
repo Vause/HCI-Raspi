@@ -34,6 +34,7 @@ Partial Class Profile
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnDelete = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,103 +50,116 @@ Partial Class Profile
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(27, 360)
+        Me.Button1.Location = New System.Drawing.Point(12, 372)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Back"
+        Me.Button1.Text = "&Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(348, 360)
+        Me.Button2.Location = New System.Drawing.Point(524, 372)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(150, 50)
         Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Save"
+        Me.Button2.Text = "&Save"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(320, 60)
+        Me.TextBox1.Location = New System.Drawing.Point(477, 83)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(170, 22)
         Me.TextBox1.TabIndex = 7
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(320, 139)
+        Me.TextBox2.Location = New System.Drawing.Point(477, 134)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(170, 22)
         Me.TextBox2.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(219, 60)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label1.Location = New System.Drawing.Point(234, 85)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 17)
+        Me.Label1.Size = New System.Drawing.Size(170, 20)
         Me.Label1.TabIndex = 10
-        Me.Label1.Text = "First Name"
+        Me.Label1.Text = "Employee First Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(210, 238)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label2.Location = New System.Drawing.Point(234, 184)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 17)
+        Me.Label2.Size = New System.Drawing.Size(193, 20)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Security Level"
+        Me.Label2.Text = "Employee Security Level"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(219, 139)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(234, 134)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 17)
+        Me.Label3.Size = New System.Drawing.Size(169, 20)
         Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Last Name"
+        Me.Label3.Text = "Employee Last Name"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(320, 238)
+        Me.ComboBox1.Location = New System.Drawing.Point(557, 184)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(90, 24)
         Me.ComboBox1.TabIndex = 13
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(27, 223)
+        Me.Button3.Location = New System.Drawing.Point(27, 238)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(159, 23)
+        Me.Button3.Size = New System.Drawing.Size(200, 50)
         Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Retake Profile Picture"
+        Me.Button3.Text = "&Retake Profile Picture"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(128, 360)
+        Me.Button4.Location = New System.Drawing.Point(238, 372)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(198, 23)
+        Me.Button4.Size = New System.Drawing.Size(200, 50)
         Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Calibrate Facial Recognition"
+        Me.Button4.Text = "&Calibrate Facial Recognition"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(213, 293)
+        Me.Label4.Location = New System.Drawing.Point(235, 35)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 17)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Label4"
         '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(524, 238)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(150, 50)
+        Me.btnDelete.TabIndex = 17
+        Me.btnDelete.Text = "&Delete Profile"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
         'Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(460, 434)
+        Me.ClientSize = New System.Drawing.Size(686, 434)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -178,4 +192,5 @@ Partial Class Profile
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnDelete As Button
 End Class

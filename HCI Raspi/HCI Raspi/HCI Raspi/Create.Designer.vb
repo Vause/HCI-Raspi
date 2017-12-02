@@ -85,34 +85,34 @@ Partial Class Create
         '
         Me.TextBox1.Location = New System.Drawing.Point(314, 106)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(170, 22)
         Me.TextBox1.TabIndex = 5
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(314, 159)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(170, 22)
         Me.TextBox2.TabIndex = 6
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(391, 210)
+        Me.ComboBox1.Location = New System.Drawing.Point(394, 210)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(91, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(90, 24)
         Me.ComboBox1.TabIndex = 7
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(106, 33)
+        Me.Label4.Location = New System.Drawing.Point(92, 28)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(266, 29)
+        Me.Label4.Size = New System.Drawing.Size(327, 29)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Enter User Information"
+        Me.Label4.Text = "Enter Employee Information"
         '
         'Create
         '

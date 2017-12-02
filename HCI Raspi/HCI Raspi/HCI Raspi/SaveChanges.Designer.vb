@@ -29,7 +29,7 @@ Partial Class SaveChanges
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(332, 121)
+        Me.Button1.Location = New System.Drawing.Point(12, 121)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(171, 48)
         Me.Button1.TabIndex = 0
@@ -38,7 +38,7 @@ Partial Class SaveChanges
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(62, 121)
+        Me.Button2.Location = New System.Drawing.Point(386, 121)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(171, 48)
         Me.Button2.TabIndex = 1
@@ -64,7 +64,6 @@ Partial Class SaveChanges
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "SaveChanges"
-        Me.Text = "SaveChanges"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

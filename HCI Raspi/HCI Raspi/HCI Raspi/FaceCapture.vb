@@ -22,6 +22,8 @@ Public Class FaceCapture
     End Sub
 
     Private Sub FaceCapture_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
+
         Dim con As New SQLite.SQLiteConnection
         Dim cmd As New SQLite.SQLiteCommand
         Try
