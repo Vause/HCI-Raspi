@@ -24,75 +24,81 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnCreate = New System.Windows.Forms.Button()
+        Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnLog = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(105, 29)
+        Me.Label1.Location = New System.Drawing.Point(79, 24)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(414, 29)
+        Me.Label1.Size = New System.Drawing.Size(318, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Facial Recognition Security System"
         '
-        'Button1
+        'btnCreate
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(110, 90)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(410, 45)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Create Employee"
-        Me.ToolTip1.SetToolTip(Me.Button1, "Create a new user to add to the database")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCreate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCreate.Location = New System.Drawing.Point(82, 73)
+        Me.btnCreate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(308, 37)
+        Me.btnCreate.TabIndex = 1
+        Me.btnCreate.Text = "Create Employee"
+        Me.ToolTip1.SetToolTip(Me.btnCreate, "Create a new user to add to the database")
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnEdit
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(110, 180)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(410, 45)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "View / Edit Employee"
-        Me.ToolTip1.SetToolTip(Me.Button2, "Find an existing employee and edit their profile")
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEdit.Location = New System.Drawing.Point(82, 146)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(308, 37)
+        Me.btnEdit.TabIndex = 2
+        Me.btnEdit.Text = "View / Edit Employee"
+        Me.ToolTip1.SetToolTip(Me.btnEdit, "Find an existing employee and edit their profile")
+        Me.btnEdit.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnLog
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(110, 270)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(410, 45)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "View Logs"
-        Me.ToolTip1.SetToolTip(Me.Button3, "View history")
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLog.Location = New System.Drawing.Point(82, 219)
+        Me.btnLog.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLog.Name = "btnLog"
+        Me.btnLog.Size = New System.Drawing.Size(308, 37)
+        Me.btnLog.TabIndex = 3
+        Me.btnLog.Text = "View Logs"
+        Me.ToolTip1.SetToolTip(Me.btnLog, "View history")
+        Me.btnLog.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnBack
         '
-        Me.Button4.Location = New System.Drawing.Point(12, 362)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 50)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Back"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(9, 294)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(112, 41)
+        Me.btnBack.TabIndex = 4
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(612, 424)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(459, 344)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnLog)
+        Me.Controls.Add(Me.btnEdit)
+        Me.Controls.Add(Me.btnCreate)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -100,9 +106,9 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnCreate As Button
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnLog As Button
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnBack As Button
 End Class

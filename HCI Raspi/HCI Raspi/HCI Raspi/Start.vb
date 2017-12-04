@@ -1,10 +1,10 @@
 ﻿Public Class Start
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnManager.Click
         Form1.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnCapture.Click
         Dim FR As New Process
         FR.StartInfo.FileName = "pythonw.exe"
         FR.StartInfo.WorkingDirectory = Application.StartupPath & "\"
@@ -18,6 +18,5 @@
 
     Private Sub Start_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-
     End Sub
 End Class

@@ -22,55 +22,41 @@ Partial Class Log
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(652, 338)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(200, 62)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Generate Log"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'ListView1
         '
-        Me.ListView1.Location = New System.Drawing.Point(60, 41)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ListView1.Location = New System.Drawing.Point(45, 33)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(399, 259)
+        Me.ListView1.Size = New System.Drawing.Size(300, 211)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
-        'Button2
+        'btnBack
         '
-        Me.Button2.Location = New System.Drawing.Point(16, 337)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(200, 62)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(12, 274)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(150, 50)
+        Me.btnBack.TabIndex = 3
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Log
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(867, 414)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(650, 336)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.ListView1)
-        Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Log"
         Me.Text = "Log"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As Button
     Friend WithEvents ListView1 As ListView
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
 End Class

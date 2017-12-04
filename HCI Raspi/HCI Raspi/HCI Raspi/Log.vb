@@ -5,9 +5,7 @@ Public Class Log
     Dim da As SQLiteDataAdapter
     Dim ds As DataSet
     Dim itemcoll(100) As String
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-    End Sub
 
     Private Sub Log_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
@@ -31,17 +29,10 @@ Public Class Log
             Next
             Dim lvi As New ListViewItem(itemcoll)
             Me.ListView1.Items.Add(lvi)
-
-
         Next
-
     End Sub
 
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
         Form1.Show()
     End Sub

@@ -25,8 +25,8 @@ Partial Class Create
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnNext = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -69,30 +69,30 @@ Partial Class Create
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Employee Security Clearance Level"
         '
-        'Button1
+        'btnBack
         '
-        Me.Button1.Location = New System.Drawing.Point(9, 225)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 41)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(9, 225)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(112, 41)
+        Me.btnBack.TabIndex = 3
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnNext
         '
-        Me.Button2.Location = New System.Drawing.Point(255, 225)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 41)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Next"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnNext.Location = New System.Drawing.Point(255, 225)
+        Me.btnNext.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnNext.Name = "btnNext"
+        Me.btnNext.Size = New System.Drawing.Size(112, 41)
+        Me.btnNext.TabIndex = 4
+        Me.btnNext.Text = "Next"
+        Me.btnNext.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(236, 57)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(128, 20)
         Me.TextBox1.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class Create
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(236, 112)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(128, 20)
         Me.TextBox2.TabIndex = 6
@@ -112,7 +112,7 @@ Partial Class Create
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
         Me.ComboBox1.Location = New System.Drawing.Point(236, 171)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
         Me.ComboBox1.TabIndex = 7
@@ -173,12 +173,12 @@ Partial Class Create
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnNext)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Create"
         Me.Text = "Create"
         Me.ResumeLayout(False)
@@ -189,8 +189,8 @@ Partial Class Create
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnNext As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents ComboBox1 As ComboBox

@@ -23,60 +23,64 @@ Partial Class Start
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnManager = New System.Windows.Forms.Button()
+        Me.btnCapture = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
-        'Button1
+        'btnManager
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(51, 97)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(205, 45)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Manager Mode"
-        Me.ToolTip1.SetToolTip(Me.Button1, "Create and track employee profiles")
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnManager.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnManager.Location = New System.Drawing.Point(38, 79)
+        Me.btnManager.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnManager.Name = "btnManager"
+        Me.btnManager.Size = New System.Drawing.Size(154, 37)
+        Me.btnManager.TabIndex = 0
+        Me.btnManager.Text = "Manager Mode"
+        Me.ToolTip1.SetToolTip(Me.btnManager, "Create and track employee profiles")
+        Me.btnManager.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnCapture
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button2.Location = New System.Drawing.Point(51, 179)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(205, 45)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Capture Mode"
-        Me.ToolTip1.SetToolTip(Me.Button2, "Security camera mode")
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnCapture.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btnCapture.Location = New System.Drawing.Point(38, 145)
+        Me.btnCapture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCapture.Name = "btnCapture"
+        Me.btnCapture.Size = New System.Drawing.Size(154, 37)
+        Me.btnCapture.TabIndex = 1
+        Me.btnCapture.Text = "Capture Mode"
+        Me.ToolTip1.SetToolTip(Me.btnCapture, "Security camera mode")
+        Me.btnCapture.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(34, 29)
+        Me.Label1.Location = New System.Drawing.Point(26, 24)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(242, 29)
+        Me.Label1.Size = New System.Drawing.Size(190, 25)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Select Startup Mode"
         '
         'Start
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(314, 266)
+        Me.ClientSize = New System.Drawing.Size(236, 216)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCapture)
+        Me.Controls.Add(Me.btnManager)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Start"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnManager As Button
+    Friend WithEvents btnCapture As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ToolTip1 As ToolTip
 End Class

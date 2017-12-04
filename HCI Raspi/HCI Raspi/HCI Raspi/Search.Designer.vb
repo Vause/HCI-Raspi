@@ -27,8 +27,8 @@ Partial Class Search
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -60,7 +60,7 @@ Partial Class Search
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(250, 24)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(76, 20)
         Me.TextBox1.TabIndex = 3
@@ -68,7 +68,7 @@ Partial Class Search
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(250, 89)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(76, 20)
         Me.TextBox2.TabIndex = 4
@@ -76,30 +76,30 @@ Partial Class Search
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(250, 154)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(76, 20)
         Me.TextBox3.TabIndex = 5
         '
-        'Button1
+        'btnBack
         '
-        Me.Button1.Location = New System.Drawing.Point(9, 225)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 41)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnBack.Location = New System.Drawing.Point(9, 225)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(112, 41)
+        Me.btnBack.TabIndex = 6
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSearch
         '
-        Me.Button2.Location = New System.Drawing.Point(214, 225)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 41)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Search"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSearch.Location = New System.Drawing.Point(214, 225)
+        Me.btnSearch.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(112, 41)
+        Me.btnSearch.TabIndex = 7
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -154,14 +154,14 @@ Partial Class Search
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSearch)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Search"
         Me.Text = "Search"
         Me.ResumeLayout(False)
@@ -174,8 +174,8 @@ Partial Class Search
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents btnSearch As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label

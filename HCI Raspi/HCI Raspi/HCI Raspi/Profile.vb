@@ -3,14 +3,14 @@ Imports System.IO
 Public Class Profile
     Dim con As New SQLite.SQLiteConnection
     Dim cmd As New SQLite.SQLiteCommand
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         PictureBox2.Image.Dispose()
         PictureBox2.Image = Nothing
         Me.Close()
         Search.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
             con.ConnectionString = "Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0"
             cmd.Connection = con
@@ -37,6 +37,7 @@ Public Class Profile
 
     Private Sub Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
+        btnSave.Enabled = False
         TextBox1.Text = Search.First.ToString()
         TextBox2.Text = Search.Last.ToString()
         ComboBox1.Text = Search.SL.ToString()
@@ -51,7 +52,7 @@ Public Class Profile
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
         PictureBox2.Image.Dispose()
         PictureBox2.Image = Nothing
         Dim r As New Process
@@ -105,19 +106,47 @@ Public Class Profile
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        'Dim Instructions As Integer = MessageBox.Show("Tips: \n Turn your head slowly in each direction while the camera captures your movement \n Keep your head the same distance from the camera \n The camera will capture for about 3 seconds.", "caption", MessageBoxButtons.OKCancel)
-        'If Instructions = DialogResult.OK Then
-        '    Dim datasetDirectory As String = Application.StartupPath & "\dataset\"
-        '    For Each datasetPhoto In Directory.GetFiles(datasetDirectory, "User" & Label4.Text & "*.png", SearchOption.TopDirectoryOnly)
-        '        File.Delete(datasetPhoto)
-        '    Next
-        '    System.Diagnostics.Process.Start(Application.StartupPath & "\facetrainer.py")
-        '    System.Threading.Thread.Sleep(10000)
-        '    System.Diagnostics.Process.Start(Application.StartupPath & "\trainer.py")
-        'Else
-        '    'do nothing
-        'End If
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If (TextBox1.Text = "" Or TextBox2.Text = "" Or ComboBox1.Text = "") Then
+            btnSave.Enabled = False
+        Else
 
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[A-Za-z]+$") Or TextBox1.Text = "") Then
+                Label5.Visible = True
+                btnSave.Enabled = False
+            Else
+                Label5.Visible = False
+                btnSave.Enabled = True
+            End If
+        End If
     End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        If (TextBox2.Text = "" Or TextBox1.Text = "" Or ComboBox1.Text = "") Then
+            btnSave.Enabled = False
+        Else
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox2.Text, "^[A-Za-z]+$")) Then
+                Label6.Visible = True
+                btnSave.Enabled = False
+            Else
+                Label6.Visible = False
+                btnSave.Enabled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If (ComboBox1.Text = "" Or TextBox1.Text = "" Or TextBox2.Text = "") Then
+            btnSave.Enabled = False
+        Else
+            If Not (ComboBox1.Text = "1" Or ComboBox1.Text = "2" Or ComboBox1.Text = "3") Then
+                Label7.Visible = True
+                btnSave.Enabled = False
+            Else
+                Label7.Visible = False
+                btnSave.Enabled = True
+            End If
+        End If
+    End Sub
+
 End Class

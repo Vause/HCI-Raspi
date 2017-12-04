@@ -94,3 +94,32 @@ C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Rasp
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.pdb
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.xml
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.dll
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.dll
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.xml
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.xml
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbprojResolveAssemblyReference.cache
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Create.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.FaceCapture.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Form1.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Instructions.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Resources.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Profile.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Start.resources
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.exe
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.xml
+C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.pdb
