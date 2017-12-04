@@ -28,7 +28,7 @@ Public Class FaceCapture
         r.StartInfo.UseShellExecute = False
         r.Start()
         r.WaitForExit()
-        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & Create.TextBox1.Text.ToLower() & "_" & Create.TextBox2.Text.ToLower() & "_" & Create.ComboBox1.Text & ".png")
+        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & Create.txtFName.Text.ToLower() & "_" & Create.txtLName.Text.ToLower() & "_" & Create.cboSecurity.Text & ".png")
     End Sub
 
     Private Sub FaceCapture_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,10 +39,10 @@ Public Class FaceCapture
             cmd.Connection = con
             cmd.CommandText = "INSERT INTO Employees(FName, LName, SecurityLevel, ImagePath) VALUES (@firstName, @lastName, @SL, @pic)"
             cmd.CommandType = CommandType.Text
-            cmd.Parameters.Add(New SQLiteParameter("@firstName", Create.TextBox1.Text.ToLower()))
-            cmd.Parameters.Add(New SQLiteParameter("@lastName", Create.TextBox2.Text.ToLower()))
-            cmd.Parameters.Add(New SQLiteParameter("@SL", Create.ComboBox1.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@pic", "opencv_frame_" & Create.TextBox1.Text.ToLower() & "_" & Create.TextBox2.Text.ToLower() & "_" & Create.ComboBox1.Text & ".png"))
+            cmd.Parameters.Add(New SQLiteParameter("@firstName", Create.txtFName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@lastName", Create.txtLName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@SL", Create.cboSecurity.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@pic", "opencv_frame_" & Create.txtFName.Text.ToLower() & "_" & Create.txtLName.Text.ToLower() & "_" & Create.cboSecurity.Text & ".png"))
             cmd.ExecuteNonQuery()
         Catch ex As Exception
             MessageBox.Show("Error while inserting in table. " & ex.Message, "Insert Records")
@@ -60,7 +60,7 @@ Public Class FaceCapture
         p.WaitForExit()
 
         'System.Diagnostics.Process.Start(Application.StartupPath & "\facetrainer.py").WaitForExit()
-        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & Create.TextBox1.Text.ToLower() & "_" & Create.TextBox2.Text.ToLower() & "_" & Create.ComboBox1.Text & ".png")
+        PictureBox1.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & Create.txtFName.Text.ToLower() & "_" & Create.txtLName.Text.ToLower() & "_" & Create.cboSecurity.Text & ".png")
         'System.Diagnostics.Process.Start(Application.StartupPath & "\trainer.py").WaitForExit()
         con.ConnectionString = "Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0"
         cmd.Connection = con
@@ -70,10 +70,10 @@ Public Class FaceCapture
         Dim r As SQLiteDataReader
         r = cmd.ExecuteReader()
         If r.Read() Then
-            Label5.Text = r.GetValue(0)
-            Label6.Text = r.GetValue(1)
-            Label7.Text = r.GetValue(2)
-            Label8.Text = r.GetValue(3)
+            lblEmployeeID.Text = r.GetValue(0)
+            lblFName.Text = r.GetValue(1)
+            lblLName.Text = r.GetValue(2)
+            lblSecurity.Text = r.GetValue(3)
             r.Close()
             con.Close()
             Me.Hide()
@@ -87,4 +87,5 @@ Public Class FaceCapture
             t.Start()
         End If
     End Sub
+
 End Class

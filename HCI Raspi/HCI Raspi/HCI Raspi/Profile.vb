@@ -18,14 +18,14 @@ Public Class Profile
             cmd.CommandText = "UPDATE Employees SET FName = @first, LName = @last, SecurityLevel = @sl WHERE ID = @eID"
 
             cmd.CommandType = CommandType.Text
-            cmd.Parameters.Add(New SQLiteParameter("@first", TextBox1.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@last", TextBox2.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@sl", ComboBox1.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@first", txtFName.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@last", txtLName.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@sl", txtSecurity.Text))
             cmd.Parameters.Add(New SQLiteParameter("@eID", Label4.Text))
             con.Open()
             cmd.ExecuteNonQuery()
             con.Close()
-            PictureBox2.Image.Save(Application.StartupPath & "\data\opencv_frame_" & TextBox1.Text.ToLower() & "_" & TextBox2.Text.ToLower() & "_" & ComboBox1.Text & ".png")
+            PictureBox2.Image.Save(Application.StartupPath & "\data\opencv_frame_" & txtFName.Text.ToLower() & "_" & txtLName.Text.ToLower() & "_" & txtSecurity.Text & ".png")
         Catch ex As Exception
             MessageBox.Show("Error while updating table. " & ex.Message, "Update Records")
         Finally
@@ -38,13 +38,13 @@ Public Class Profile
     Private Sub Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
         btnSave.Enabled = False
-        TextBox1.Text = Search.First.ToString()
-        TextBox2.Text = Search.Last.ToString()
-        ComboBox1.Text = Search.SL.ToString()
+        txtFName.Text = Search.First.ToString()
+        txtLName.Text = Search.Last.ToString()
+        txtSecurity.Text = Search.SL.ToString()
         Label4.Text = Search.EmpID.ToString()
 
         Try
-            PictureBox2.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & TextBox1.Text.ToLower() & "_" & TextBox2.Text.ToLower() & "_" & ComboBox1.Text & ".png")
+            PictureBox2.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & txtFName.Text.ToLower() & "_" & txtLName.Text.ToLower() & "_" & txtSecurity.Text & ".png")
         Catch
             MessageBox.Show("Profile Not Found!")
             Me.Close()
@@ -64,7 +64,7 @@ Public Class Profile
         r.StartInfo.UseShellExecute = False
         r.Start()
         r.WaitForExit()
-        PictureBox2.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & TextBox1.Text.ToLower() & "_" & TextBox2.Text.ToLower() & "_" & ComboBox1.Text & ".png")
+        PictureBox2.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & txtFName.Text.ToLower() & "_" & txtLName.Text.ToLower() & "_" & txtSecurity.Text & ".png")
     End Sub
 
 
@@ -97,7 +97,7 @@ Public Class Profile
             For Each datasetPhoto In Directory.GetFiles(datasetDirectory, "User" & Label4.Text & "*.jpg", SearchOption.TopDirectoryOnly)
                 File.Delete(datasetPhoto)
             Next
-            For Each profilePhoto In Directory.GetFiles(profileDirectory, "opencv_frame_" & TextBox1.Text.ToLower() & "_" & TextBox2.Text.ToLower() & "_" & ComboBox1.Text & ".png", SearchOption.TopDirectoryOnly)
+            For Each profilePhoto In Directory.GetFiles(profileDirectory, "opencv_frame_" & txtFName.Text.ToLower() & "_" & txtLName.Text.ToLower() & "_" & txtSecurity.Text & ".png", SearchOption.TopDirectoryOnly)
                 File.Delete(profilePhoto)
             Next
             Me.Close()
@@ -106,12 +106,12 @@ Public Class Profile
         End If
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        If (TextBox1.Text = "" Or TextBox2.Text = "" Or ComboBox1.Text = "") Then
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
+        If (txtFName.Text = "" Or txtLName.Text = "" Or txtSecurity.Text = "") Then
             btnSave.Enabled = False
         Else
 
-            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[A-Za-z]+$") Or TextBox1.Text = "") Then
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(txtFName.Text, "^[A-Za-z]+$") Or txtFName.Text = "") Then
                 Label5.Visible = True
                 btnSave.Enabled = False
             Else
@@ -121,29 +121,29 @@ Public Class Profile
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        If (TextBox2.Text = "" Or TextBox1.Text = "" Or ComboBox1.Text = "") Then
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
+        If (txtLName.Text = "" Or txtFName.Text = "" Or txtSecurity.Text = "") Then
             btnSave.Enabled = False
         Else
-            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox2.Text, "^[A-Za-z]+$")) Then
-                Label6.Visible = True
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(txtLName.Text, "^[A-Za-z]+$")) Then
+                lblFNameError.Visible = True
                 btnSave.Enabled = False
             Else
-                Label6.Visible = False
+                lblFNameError.Visible = False
                 btnSave.Enabled = True
             End If
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If (ComboBox1.Text = "" Or TextBox1.Text = "" Or TextBox2.Text = "") Then
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles txtSecurity.SelectedIndexChanged
+        If (txtSecurity.Text = "" Or txtFName.Text = "" Or txtLName.Text = "") Then
             btnSave.Enabled = False
         Else
-            If Not (ComboBox1.Text = "1" Or ComboBox1.Text = "2" Or ComboBox1.Text = "3") Then
-                Label7.Visible = True
+            If Not (txtSecurity.Text = "1" Or txtSecurity.Text = "2" Or txtSecurity.Text = "3") Then
+                lblLNameError.Visible = True
                 btnSave.Enabled = False
             Else
-                Label7.Visible = False
+                lblLNameError.Visible = False
                 btnSave.Enabled = True
             End If
         End If

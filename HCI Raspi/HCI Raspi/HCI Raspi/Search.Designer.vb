@@ -24,15 +24,15 @@ Partial Class Search
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtFName = New System.Windows.Forms.TextBox()
+        Me.txtLName = New System.Windows.Forms.TextBox()
+        Me.txtSecurity = New System.Windows.Forms.TextBox()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblFNameError = New System.Windows.Forms.Label()
+        Me.lblLNameError = New System.Windows.Forms.Label()
+        Me.lblSecurityError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -57,29 +57,29 @@ Partial Class Search
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Employee Last Name"
         '
-        'TextBox1
+        'txtFName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(250, 24)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtFName.Location = New System.Drawing.Point(250, 24)
+        Me.txtFName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFName.Name = "txtFName"
+        Me.txtFName.Size = New System.Drawing.Size(76, 20)
+        Me.txtFName.TabIndex = 3
         '
-        'TextBox2
+        'txtLName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(250, 89)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtLName.Location = New System.Drawing.Point(250, 89)
+        Me.txtLName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtLName.Name = "txtLName"
+        Me.txtLName.Size = New System.Drawing.Size(76, 20)
+        Me.txtLName.TabIndex = 4
         '
-        'TextBox3
+        'txtSecurity
         '
-        Me.TextBox3.Location = New System.Drawing.Point(250, 154)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(76, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.txtSecurity.Location = New System.Drawing.Point(250, 154)
+        Me.txtSecurity.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSecurity.Name = "txtSecurity"
+        Me.txtSecurity.Size = New System.Drawing.Size(76, 20)
+        Me.txtSecurity.TabIndex = 5
         '
         'btnBack
         '
@@ -112,53 +112,53 @@ Partial Class Search
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Employee Security Level"
         '
-        'Label3
+        'lblFNameError
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(20, 57)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(185, 13)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Invalid input. Please enter only letters."
+        Me.lblFNameError.AutoSize = True
+        Me.lblFNameError.ForeColor = System.Drawing.Color.Red
+        Me.lblFNameError.Location = New System.Drawing.Point(20, 57)
+        Me.lblFNameError.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFNameError.Name = "lblFNameError"
+        Me.lblFNameError.Size = New System.Drawing.Size(185, 13)
+        Me.lblFNameError.TabIndex = 9
+        Me.lblFNameError.Text = "Invalid input. Please enter only letters."
         '
-        'Label5
+        'lblLNameError
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(20, 122)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(185, 13)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Invalid input. Please enter only letters."
+        Me.lblLNameError.AutoSize = True
+        Me.lblLNameError.ForeColor = System.Drawing.Color.Red
+        Me.lblLNameError.Location = New System.Drawing.Point(20, 122)
+        Me.lblLNameError.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLNameError.Name = "lblLNameError"
+        Me.lblLNameError.Size = New System.Drawing.Size(185, 13)
+        Me.lblLNameError.TabIndex = 10
+        Me.lblLNameError.Text = "Invalid input. Please enter only letters."
         '
-        'Label6
+        'lblSecurityError
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(20, 187)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(273, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Invalid input. Please choose a number between 1 and 3."
+        Me.lblSecurityError.AutoSize = True
+        Me.lblSecurityError.ForeColor = System.Drawing.Color.Red
+        Me.lblSecurityError.Location = New System.Drawing.Point(20, 187)
+        Me.lblSecurityError.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSecurityError.Name = "lblSecurityError"
+        Me.lblSecurityError.Size = New System.Drawing.Size(273, 13)
+        Me.lblSecurityError.TabIndex = 11
+        Me.lblSecurityError.Text = "Invalid input. Please choose a number between 1 and 3."
         '
         'Search
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(341, 278)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblSecurityError)
+        Me.Controls.Add(Me.lblLNameError)
+        Me.Controls.Add(Me.lblFNameError)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtSecurity)
+        Me.Controls.Add(Me.txtLName)
+        Me.Controls.Add(Me.txtFName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -171,13 +171,13 @@ Partial Class Search
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtFName As TextBox
+    Friend WithEvents txtLName As TextBox
+    Friend WithEvents txtSecurity As TextBox
     Friend WithEvents btnBack As Button
     Friend WithEvents btnSearch As Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblFNameError As Label
+    Friend WithEvents lblLNameError As Label
+    Friend WithEvents lblSecurityError As Label
 End Class

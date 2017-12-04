@@ -25,19 +25,19 @@ Partial Class Profile
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtFName = New System.Windows.Forms.TextBox()
+        Me.txtLName = New System.Windows.Forms.TextBox()
+        Me.lblFName = New System.Windows.Forms.Label()
+        Me.lblSecurity = New System.Windows.Forms.Label()
+        Me.lblLName = New System.Windows.Forms.Label()
+        Me.txtSecurity = New System.Windows.Forms.ComboBox()
         Me.btnRetake = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblFNameError = New System.Windows.Forms.Label()
+        Me.lblLNameError = New System.Windows.Forms.Label()
+        Me.lblSecurityError = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -72,64 +72,64 @@ Partial Class Profile
         Me.btnSave.Text = "&Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtFName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(358, 67)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtFName.Location = New System.Drawing.Point(358, 67)
+        Me.txtFName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFName.Name = "txtFName"
+        Me.txtFName.Size = New System.Drawing.Size(128, 20)
+        Me.txtFName.TabIndex = 7
         '
-        'TextBox2
+        'txtLName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(358, 122)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
-        Me.TextBox2.TabIndex = 8
+        Me.txtLName.Location = New System.Drawing.Point(358, 122)
+        Me.txtLName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtLName.Name = "txtLName"
+        Me.txtLName.Size = New System.Drawing.Size(128, 20)
+        Me.txtLName.TabIndex = 8
         '
-        'Label1
+        'lblFName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(176, 69)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(142, 17)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Employee First Name"
+        Me.lblFName.AutoSize = True
+        Me.lblFName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.lblFName.Location = New System.Drawing.Point(176, 69)
+        Me.lblFName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFName.Name = "lblFName"
+        Me.lblFName.Size = New System.Drawing.Size(142, 17)
+        Me.lblFName.TabIndex = 10
+        Me.lblFName.Text = "Employee First Name"
         '
-        'Label2
+        'lblSecurity
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(176, 175)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(163, 17)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Employee Security Level"
+        Me.lblSecurity.AutoSize = True
+        Me.lblSecurity.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.lblSecurity.Location = New System.Drawing.Point(176, 175)
+        Me.lblSecurity.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSecurity.Name = "lblSecurity"
+        Me.lblSecurity.Size = New System.Drawing.Size(163, 17)
+        Me.lblSecurity.TabIndex = 11
+        Me.lblSecurity.Text = "Employee Security Level"
         '
-        'Label3
+        'lblLName
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(176, 122)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 17)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Employee Last Name"
+        Me.lblLName.AutoSize = True
+        Me.lblLName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.lblLName.Location = New System.Drawing.Point(176, 122)
+        Me.lblLName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLName.Name = "lblLName"
+        Me.lblLName.Size = New System.Drawing.Size(142, 17)
+        Me.lblLName.TabIndex = 12
+        Me.lblLName.Text = "Employee Last Name"
         '
-        'ComboBox1
+        'txtSecurity
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(358, 171)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
-        Me.ComboBox1.TabIndex = 13
+        Me.txtSecurity.FormattingEnabled = True
+        Me.txtSecurity.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.txtSecurity.Location = New System.Drawing.Point(358, 171)
+        Me.txtSecurity.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSecurity.Name = "txtSecurity"
+        Me.txtSecurity.Size = New System.Drawing.Size(128, 21)
+        Me.txtSecurity.TabIndex = 13
         '
         'btnRetake
         '
@@ -173,57 +173,57 @@ Partial Class Profile
         Me.Label5.TabIndex = 18
         Me.Label5.Text = "ID"
         '
-        'Label6
+        'lblFNameError
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(179, 90)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(185, 13)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Invalid input. Please enter only letters."
-        Me.Label6.Visible = False
+        Me.lblFNameError.AutoSize = True
+        Me.lblFNameError.ForeColor = System.Drawing.Color.Red
+        Me.lblFNameError.Location = New System.Drawing.Point(179, 90)
+        Me.lblFNameError.Name = "lblFNameError"
+        Me.lblFNameError.Size = New System.Drawing.Size(185, 13)
+        Me.lblFNameError.TabIndex = 19
+        Me.lblFNameError.Text = "Invalid input. Please enter only letters."
+        Me.lblFNameError.Visible = False
         '
-        'Label7
+        'lblLNameError
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(179, 144)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(185, 13)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Invalid input. Please enter only letters."
-        Me.Label7.Visible = False
+        Me.lblLNameError.AutoSize = True
+        Me.lblLNameError.ForeColor = System.Drawing.Color.Red
+        Me.lblLNameError.Location = New System.Drawing.Point(179, 144)
+        Me.lblLNameError.Name = "lblLNameError"
+        Me.lblLNameError.Size = New System.Drawing.Size(185, 13)
+        Me.lblLNameError.TabIndex = 20
+        Me.lblLNameError.Text = "Invalid input. Please enter only letters."
+        Me.lblLNameError.Visible = False
         '
-        'Label8
+        'lblSecurityError
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(175, 194)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(273, 13)
-        Me.Label8.TabIndex = 21
-        Me.Label8.Text = "Invalid input. Please choose a number between 1 and 3."
-        Me.Label8.Visible = False
+        Me.lblSecurityError.AutoSize = True
+        Me.lblSecurityError.ForeColor = System.Drawing.Color.Red
+        Me.lblSecurityError.Location = New System.Drawing.Point(175, 194)
+        Me.lblSecurityError.Name = "lblSecurityError"
+        Me.lblSecurityError.Size = New System.Drawing.Size(273, 13)
+        Me.lblSecurityError.TabIndex = 21
+        Me.lblSecurityError.Text = "Invalid input. Please choose a number between 1 and 3."
+        Me.lblSecurityError.Visible = False
         '
         'Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(514, 353)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.lblSecurityError)
+        Me.Controls.Add(Me.lblLNameError)
+        Me.Controls.Add(Me.lblFNameError)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnRetake)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtSecurity)
+        Me.Controls.Add(Me.lblLName)
+        Me.Controls.Add(Me.lblSecurity)
+        Me.Controls.Add(Me.lblFName)
+        Me.Controls.Add(Me.txtLName)
+        Me.Controls.Add(Me.txtFName)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.PictureBox2)
@@ -239,17 +239,17 @@ Partial Class Profile
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnBack As Button
     Friend WithEvents btnSave As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtFName As TextBox
+    Friend WithEvents txtLName As TextBox
+    Friend WithEvents lblFName As Label
+    Friend WithEvents lblSecurity As Label
+    Friend WithEvents lblLName As Label
+    Friend WithEvents txtSecurity As ComboBox
     Friend WithEvents btnRetake As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lblFNameError As Label
+    Friend WithEvents lblLNameError As Label
+    Friend WithEvents lblSecurityError As Label
 End Class

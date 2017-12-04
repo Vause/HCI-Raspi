@@ -17,9 +17,9 @@ Public Class Search
             cmd.Connection = con
             cmd.CommandText = "SELECT ID, FName, LName, SecurityLevel FROM Employees WHERE (FName = @first AND LName = @last AND SecurityLevel = @sl)"
             cmd.CommandType = CommandType.Text
-            cmd.Parameters.Add(New SQLiteParameter("@first", TextBox1.Text.ToLower()))
-            cmd.Parameters.Add(New SQLiteParameter("@last", TextBox2.Text.ToLower()))
-            cmd.Parameters.Add(New SQLiteParameter("@sl", TextBox3.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@first", txtFName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@last", txtLName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@sl", txtSecurity.Text))
             con.Open()
             Dim r As SQLiteDataReader
             r = cmd.ExecuteReader()
@@ -43,53 +43,53 @@ Public Class Search
 
     Private Sub Search_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-        Label3.Visible = False
-        Label5.Visible = False
-        Label6.Visible = False
+        lblFNameError.Visible = False
+        lblLNameError.Visible = False
+        lblSecurityError.Visible = False
         btnSearch.Enabled = False
         Form1.Hide()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        If (TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "") Then
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
+        If (txtFName.Text = "" Or txtLName.Text = "" Or txtSecurity.Text = "") Then
             btnSearch.Enabled = False
         Else
 
-            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox1.Text, "^[A-Za-z]+$") Or TextBox1.Text = "") Then
-                Label3.Visible = True
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(txtFName.Text, "^[A-Za-z]+$") Or txtFName.Text = "") Then
+                lblFNameError.Visible = True
                 btnSearch.Enabled = False
             Else
-                Label3.Visible = False
+                lblFNameError.Visible = False
                 btnSearch.Enabled = True
 
             End If
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-        If (TextBox2.Text = "" Or TextBox1.Text = "" Or TextBox3.Text = "") Then
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
+        If (txtLName.Text = "" Or txtFName.Text = "" Or txtSecurity.Text = "") Then
             btnSearch.Enabled = False
         Else
-            If Not (System.Text.RegularExpressions.Regex.IsMatch(TextBox2.Text, "^[A-Za-z]+$")) Then
-                Label5.Visible = True
+            If Not (System.Text.RegularExpressions.Regex.IsMatch(txtLName.Text, "^[A-Za-z]+$")) Then
+                lblLNameError.Visible = True
                 btnSearch.Enabled = False
             Else
-                Label5.Visible = False
+                lblLNameError.Visible = False
                 btnSearch.Enabled = True
             End If
         End If
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-        If (TextBox3.Text = "" Or TextBox1.Text = "" Or TextBox2.Text = "") Then
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles txtSecurity.TextChanged
+        If (txtSecurity.Text = "" Or txtFName.Text = "" Or txtLName.Text = "") Then
             btnSearch.Enabled = False
         Else
 
-            If Not (TextBox3.Text = "1" Or TextBox3.Text = "2" Or TextBox3.Text = "3") Then
-                Label6.Visible = True
+            If Not (txtSecurity.Text = "1" Or txtSecurity.Text = "2" Or txtSecurity.Text = "3") Then
+                lblSecurityError.Visible = True
                 btnSearch.Enabled = False
             Else
-                Label6.Visible = False
+                lblSecurityError.Visible = False
                 btnSearch.Enabled = True
             End If
         End If
