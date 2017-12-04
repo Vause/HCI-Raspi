@@ -6,5 +6,6 @@ Dependencies:
 	Python: Opencv, Opencv-contrib
 	VB: SQLite nuget package, Must be connected to HCIRaspi.db in server explorer
 	Folders to be created: data, dataset, recognizer
+	Webcam is needed
 To Run:
 	Run HCIRaspi.exe in "Debug" folder
