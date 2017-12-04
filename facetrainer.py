@@ -22,7 +22,7 @@ while(True):
         cv2.imwrite("dataSet/User."+ str(Id) +'.'+ str(sampleSize) + ".jpg", grayScale[y:y+h,x:x+w])
         if(sampleSize == 5):
             cv2.imwrite("data/opencv_frame_{0}_{1}_{2}.png".format(user[1], user[2], user[3]), grayScale[y:y+h,x:x+w])
-        cv2.imshow('frame',img)
+        cv2.imshow('Face Capture',img)
     #wait for 100 miliseconds or if the user presses the 'q' key
     if cv2.waitKey(100) & 0xFF == ord('q'):
         break

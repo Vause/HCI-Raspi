@@ -30,13 +30,16 @@ Partial Class Search
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(39, 27)
+        Me.Label1.Location = New System.Drawing.Point(26, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(170, 20)
         Me.Label1.TabIndex = 0
@@ -46,7 +49,7 @@ Partial Class Search
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(39, 72)
+        Me.Label2.Location = New System.Drawing.Point(26, 110)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(169, 20)
         Me.Label2.TabIndex = 1
@@ -54,21 +57,21 @@ Partial Class Search
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(311, 27)
+        Me.TextBox1.Location = New System.Drawing.Point(334, 30)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 22)
         Me.TextBox1.TabIndex = 3
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(311, 72)
+        Me.TextBox2.Location = New System.Drawing.Point(334, 110)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 22)
         Me.TextBox2.TabIndex = 4
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(311, 119)
+        Me.TextBox3.Location = New System.Drawing.Point(334, 190)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 22)
         Me.TextBox3.TabIndex = 5
@@ -95,17 +98,50 @@ Partial Class Search
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(39, 119)
+        Me.Label4.Location = New System.Drawing.Point(26, 190)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(193, 20)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Employee Security Level"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Red
+        Me.Label3.Location = New System.Drawing.Point(26, 70)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(276, 17)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Invalid input. Please enter only characters."
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.Red
+        Me.Label5.Location = New System.Drawing.Point(27, 150)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(276, 17)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Invalid input. Please enter only characters."
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.Red
+        Me.Label6.Location = New System.Drawing.Point(27, 230)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(361, 17)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Invalid input. Please choose a number between 1 and 3."
         '
         'Search
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(455, 342)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -129,4 +165,7 @@ Partial Class Search
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class
