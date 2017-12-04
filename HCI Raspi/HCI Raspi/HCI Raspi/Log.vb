@@ -13,7 +13,7 @@ Public Class Log
 
         conn = New SQLiteConnection("Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0")
         Dim strQ As String = String.Empty
-        strQ = "SELECT EmployeeID, TimeLog, Success FROM Logs"
+        strQ = "SELECT EmployeeID, EmployeeLName, TimeLog, Success FROM Logs"
         cmd = New SQLiteCommand(strQ, conn)
         da = New SQLiteDataAdapter(cmd)
         ds = New DataSet
@@ -22,10 +22,12 @@ Public Class Log
         Dim j As Integer = 0
         For i = 0 To ds.Tables(0).Columns.Count - 1
             Me.ListView1.Columns.Add(ds.Tables(0).Columns(i).ColumnName.ToString())
+
         Next
         For i = 0 To ds.Tables(0).Rows.Count - 1
             For j = 0 To ds.Tables(0).Columns.Count - 1
                 itemcoll(j) = ds.Tables(0).Rows(i)(j).ToString()
+                Me.ListView1.AutoResizeColumn(j, ColumnHeaderAutoResizeStyle.HeaderSize)
             Next
             Dim lvi As New ListViewItem(itemcoll)
             Me.ListView1.Items.Add(lvi)

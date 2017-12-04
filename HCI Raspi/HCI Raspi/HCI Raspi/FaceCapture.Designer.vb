@@ -62,7 +62,7 @@ Partial Class FaceCapture
         '
         'btnRetake
         '
-        Me.btnRetake.Location = New System.Drawing.Point(227, 345)
+        Me.btnRetake.Location = New System.Drawing.Point(231, 345)
         Me.btnRetake.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRetake.Name = "btnRetake"
         Me.btnRetake.Size = New System.Drawing.Size(149, 50)

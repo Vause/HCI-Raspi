@@ -32,10 +32,10 @@ Partial Class Start
         'btnManager
         '
         Me.btnManager.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnManager.Location = New System.Drawing.Point(206, 176)
+        Me.btnManager.Location = New System.Drawing.Point(113, 173)
         Me.btnManager.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnManager.Name = "btnManager"
-        Me.btnManager.Size = New System.Drawing.Size(205, 46)
+        Me.btnManager.Size = New System.Drawing.Size(411, 46)
         Me.btnManager.TabIndex = 0
         Me.btnManager.Text = "Manager Mode"
         Me.ToolTip1.SetToolTip(Me.btnManager, "Create and track employee profiles")
@@ -44,10 +44,10 @@ Partial Class Start
         'btnCapture
         '
         Me.btnCapture.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnCapture.Location = New System.Drawing.Point(206, 257)
+        Me.btnCapture.Location = New System.Drawing.Point(113, 262)
         Me.btnCapture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCapture.Name = "btnCapture"
-        Me.btnCapture.Size = New System.Drawing.Size(205, 46)
+        Me.btnCapture.Size = New System.Drawing.Size(411, 46)
         Me.btnCapture.TabIndex = 1
         Me.btnCapture.Text = "Capture Mode"
         Me.ToolTip1.SetToolTip(Me.btnCapture, "Security camera mode")
@@ -57,7 +57,7 @@ Partial Class Start
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(190, 109)
+        Me.Label1.Location = New System.Drawing.Point(186, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(242, 29)
         Me.Label1.TabIndex = 2

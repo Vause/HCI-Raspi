@@ -29,19 +29,19 @@ Partial Class Log
         '
         'ListView1
         '
-        Me.ListView1.Location = New System.Drawing.Point(59, 63)
+        Me.ListView1.Location = New System.Drawing.Point(16, 61)
         Me.ListView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(399, 259)
+        Me.ListView1.Size = New System.Drawing.Size(570, 259)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(16, 337)
+        Me.btnBack.Location = New System.Drawing.Point(16, 351)
         Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(200, 62)
+        Me.btnBack.Size = New System.Drawing.Size(149, 50)
         Me.btnBack.TabIndex = 3
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = True
@@ -50,7 +50,7 @@ Partial Class Log
         '
         Me.ProfileTitle.AutoSize = True
         Me.ProfileTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProfileTitle.Location = New System.Drawing.Point(188, 18)
+        Me.ProfileTitle.Location = New System.Drawing.Point(231, 19)
         Me.ProfileTitle.Name = "ProfileTitle"
         Me.ProfileTitle.Size = New System.Drawing.Size(145, 29)
         Me.ProfileTitle.TabIndex = 24
@@ -60,7 +60,7 @@ Partial Class Log
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(539, 414)
+        Me.ClientSize = New System.Drawing.Size(598, 414)
         Me.Controls.Add(Me.ProfileTitle)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.ListView1)

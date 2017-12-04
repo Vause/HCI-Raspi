@@ -18,13 +18,14 @@ Public Class Profile
             cmd.CommandText = "UPDATE Employees SET FName = @first, LName = @last, SecurityLevel = @sl WHERE ID = @eID"
 
             cmd.CommandType = CommandType.Text
-            cmd.Parameters.Add(New SQLiteParameter("@first", txtFName.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@last", txtLName.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@sl", cboSecurity.Text))
-            cmd.Parameters.Add(New SQLiteParameter("@eID", Label4.Text))
+            cmd.Parameters.Add(New SQLiteParameter("@first", txtFName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@last", txtLName.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@sl", cboSecurity.Text.ToLower()))
+            cmd.Parameters.Add(New SQLiteParameter("@eID", Label4.Text.ToLower()))
             con.Open()
             cmd.ExecuteNonQuery()
             con.Close()
+            MsgBox("Changes Saved.", MsgBoxStyle.OkOnly)
             PictureBox2.Image.Save(Application.StartupPath & "\data\opencv_frame_" & txtFName.Text.ToLower() & "_" & txtLName.Text.ToLower() & "_" & cboSecurity.Text & ".png")
         Catch ex As Exception
             MessageBox.Show("Error while updating table. " & ex.Message, "Update Records")

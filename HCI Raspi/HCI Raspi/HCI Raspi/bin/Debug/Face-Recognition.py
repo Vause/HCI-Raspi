@@ -23,12 +23,12 @@ def getProf(id):
         prof = row
     return prof
 
-def insertIntoLogs(id):
+def insertIntoLogs(id, lname):
     db = sqlite3.connect('HCIRaspi.db')
     cursor = db.cursor()
     now = datetime.now()
-    cmd = "INSERT INTO Logs (EmployeeID, TimeLog, Success) VALUES (?, CURRENT_TIMESTAMP, ?)"
-    cursor = db.execute(cmd, (str(id), "1"))
+    cmd = "INSERT INTO Logs (EmployeeID, EmployeeLName, TimeLog, Success) VALUES (?, ?, CURRENT_TIMESTAMP, '1')"
+    cursor = db.execute(cmd, (str(id), str(lname)))
     db.commit()
 
 camera = cv2.VideoCapture(0)
@@ -43,10 +43,10 @@ while True:
         if(confidence < 50):
             profile = getProf(Id)
             cv2.putText(im, str(profile[1]), (x,y-40), font, 2, (62,180,222), 3)
-            insertIntoLogs(Id)
+            insertIntoLogs(Id, profile[2])
         else:
             cv2.putText(im, "Unknown", (x,y-40), font, 2, (62,180,222), 3)
-            insertIntoLogs(0)
+            insertIntoLogs(0, "Unknown")
     cv2.imshow('Employee Authentication',im) 
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break

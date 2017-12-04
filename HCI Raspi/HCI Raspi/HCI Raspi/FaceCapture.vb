@@ -18,7 +18,6 @@ Public Class FaceCapture
     Private Sub btnRetake_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
         PictureBox1.Image.Dispose()
         PictureBox1.Image = Nothing
-        'System.Diagnostics.Process.Start(Application.StartupPath & "\try.py").WaitForExit()
         Dim r As New Process
         r.StartInfo.FileName = "pythonw.exe"
         r.StartInfo.WorkingDirectory = Application.StartupPath & "\"
@@ -59,9 +58,7 @@ Public Class FaceCapture
         p.Start()
         p.WaitForExit()
 
-        'System.Diagnostics.Process.Start(Application.StartupPath & "\facetrainer.py").WaitForExit()
         PictureBox1.Image = Image.FromFile(Application.StartupPath & "\data\opencv_frame_" & Create.txtFName.Text.ToLower() & "_" & Create.txtLName.Text.ToLower() & "_" & Create.cboSecurity.Text & ".png")
-        'System.Diagnostics.Process.Start(Application.StartupPath & "\trainer.py").WaitForExit()
         con.ConnectionString = "Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0"
         cmd.Connection = con
         cmd.CommandText = "SELECT ID, FName, LName, SecurityLevel FROM Employees ORDER BY ID DESC"
