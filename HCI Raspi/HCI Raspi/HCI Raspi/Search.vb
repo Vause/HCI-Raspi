@@ -9,6 +9,9 @@ Public Class Search
         Home.Show()
     End Sub
 
+    'Make DB Connection
+    'Search for Employee in DB based on User input
+    'Open profile for user if found, else try again
     Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Dim con As New SQLite.SQLiteConnection
         Dim cmd As New SQLite.SQLiteCommand
@@ -42,6 +45,8 @@ Public Class Search
     End Sub
 
     Private Sub Search_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'Validation labels are not visible to start
         Me.CenterToScreen()
         lblFNameError.Visible = False
         lblLNameError.Visible = False
@@ -50,6 +55,7 @@ Public Class Search
         Home.Hide()
     End Sub
 
+    'Text Validation
     Private Sub txtFName_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
         If (txtFName.Text = "" Or txtLName.Text = "" Or txtSecurity.Text = "") Then
             btnSearch.Enabled = False

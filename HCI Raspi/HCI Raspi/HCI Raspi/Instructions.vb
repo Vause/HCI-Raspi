@@ -1,4 +1,5 @@
 ﻿Public Class Instructions
+    'This form is for showing instructions for capturing face
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         Me.Close()
         FaceCapture.Show()

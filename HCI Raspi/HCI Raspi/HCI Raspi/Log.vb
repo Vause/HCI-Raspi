@@ -11,6 +11,9 @@ Public Class Log
         Me.CenterToScreen()
         Me.ListView1.View = View.Details
 
+        'Create DB connection
+        'Select information from Logs
+        'Show data from Logs table in listview
         conn = New SQLiteConnection("Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0")
         Dim strQ As String = String.Empty
         strQ = "SELECT EmployeeID, EmployeeLName, TimeLog, Success FROM Logs"

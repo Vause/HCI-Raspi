@@ -1,4 +1,5 @@
 ﻿Public Class Finish
+    'This form is for after a user confirms their account creation
     Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         Home.Show()
         Me.Close()

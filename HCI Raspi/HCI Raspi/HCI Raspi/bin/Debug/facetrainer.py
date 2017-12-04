@@ -3,9 +3,10 @@ import sqlite3
 camera = cv2.VideoCapture(0)
 faceDetector=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
+#inital connection with db
 db = sqlite3.connect('HCIRaspi.db')
 cursor = db.cursor()
-cursor.execute('''SELECT ID, FName, LName, SecurityLevel FROM Employees ORDER BY ID DESC''')
+cursor.execute('''SELECT ID, FName, LName, SecurityLevel FROM Employees ORDER BY ID DESC''') #Selecting last person inserted into db
 user = cursor.fetchone()
 Id = user[0]
 sampleSize = 0
@@ -26,8 +27,8 @@ while(True):
     #wait for 100 miliseconds or if the user presses the 'q' key
     if cv2.waitKey(100) & 0xFF == ord('q'):
         break
-    # break if the sample number is more than 20
-    elif sampleSize > 40:
+    # break if the sample number is more than 40
+    elif sampleSize > 40: 
         break
 camera.release()
 cv2.destroyAllWindows()

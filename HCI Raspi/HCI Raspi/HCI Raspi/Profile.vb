@@ -4,6 +4,7 @@ Public Class Profile
     Dim con As New SQLite.SQLiteConnection
     Dim cmd As New SQLite.SQLiteCommand
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        'Picture cannot be shown on the screen, or else an exception will be thrown
         PictureBox2.Image.Dispose()
         PictureBox2.Image = Nothing
         Me.Close()
@@ -12,6 +13,9 @@ Public Class Profile
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Try
+            'Make DB Connection
+            'Update Employee information that has been changed by the user
+            'Save new photo of the user
             con.ConnectionString = "Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0"
             cmd.Connection = con
 
@@ -37,6 +41,8 @@ Public Class Profile
     End Sub
 
     Private Sub Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'Generating the info to show on the profile screen
         Me.CenterToScreen()
         btnSave.Enabled = False
         txtFName.Text = Search.First.ToString()
@@ -54,6 +60,11 @@ Public Class Profile
     End Sub
 
     Private Sub btnRetake_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
+
+        'Create new process
+        'Start pythonw.exe, command window will not be shown
+        'Run the try.py file, it will take a photo
+        'Wait for process to end before replacing photo
         PictureBox2.Image.Dispose()
         PictureBox2.Image = Nothing
         Dim r As New Process
@@ -71,6 +82,8 @@ Public Class Profile
 
 
     Private Sub btnDelete_Click_1(sender As Object, e As EventArgs) Handles btnDelete.Click
+
+        'Delete user profile, from DB and all pictures taken
         Dim result As Integer = MessageBox.Show("Are you sure you want to delete this profile?", "Delete?", MessageBoxButtons.YesNo)
         If result = DialogResult.No Then
             'nothing happens
@@ -107,6 +120,7 @@ Public Class Profile
         End If
     End Sub
 
+    'Text Validation
     Private Sub txtFName_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
         If (txtFName.Text = "" Or txtLName.Text = "" Or cboSecurity.Text = "") Then
             btnSave.Enabled = False

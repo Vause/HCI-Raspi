@@ -4,6 +4,7 @@
         Me.Hide()
     End Sub
 
+    'Run Face-Recognition python file. Check python files for more detail
     Private Sub btnCapture_Click(sender As Object, e As EventArgs) Handles btnCapture.Click
         Dim FR As New Process
         FR.StartInfo.FileName = "pythonw.exe"

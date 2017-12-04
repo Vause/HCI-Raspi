@@ -1,4 +1,5 @@
 ﻿Public Class Home
+    'This form directs to the different forms in the application
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         Create.Show()
     End Sub

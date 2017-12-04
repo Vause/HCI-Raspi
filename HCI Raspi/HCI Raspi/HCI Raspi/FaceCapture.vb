@@ -9,6 +9,8 @@ Public Class FaceCapture
     End Sub
 
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
+
+        'Picture cannot be shown on the screen, or else an exception will be thrown
         PictureBox1.Image.Dispose()
         PictureBox1.Image = Nothing
         Finish.Show()
@@ -16,8 +18,15 @@ Public Class FaceCapture
     End Sub
 
     Private Sub btnRetake_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
+
+        'Picture cannot be shown on the screen, or else an exception will be thrown
         PictureBox1.Image.Dispose()
         PictureBox1.Image = Nothing
+
+        'Create new process
+        'Start pythonw.exe, command window will not be shown
+        'Run the try.py file, it will take a photo
+        'Wait for process to end before replacing photo
         Dim r As New Process
         r.StartInfo.FileName = "pythonw.exe"
         r.StartInfo.WorkingDirectory = Application.StartupPath & "\"
@@ -33,6 +42,11 @@ Public Class FaceCapture
     Private Sub FaceCapture_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
         Try
+            'Create DB connection
+            'Insert user input into the Employees Table
+            'Create profile picture for Employee
+            'Show values on the screen for confirmation
+            'Also runs python files, check python files for more detail
             con.ConnectionString = "Datasource=" & Application.StartupPath & "\HCIRaspi.db;stepapi=0;syncpragma=NORMAL;notxn=0;timeout=100000;shortnames=0;longnames=0;nocreat=0;nowchar=0;fksupport=0;oemcp=0;bigint=0;jdconv=0"
             con.Open()
             cmd.Connection = con
