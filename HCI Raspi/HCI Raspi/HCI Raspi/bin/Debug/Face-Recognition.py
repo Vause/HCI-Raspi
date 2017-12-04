@@ -40,8 +40,8 @@ while True:
     for(x,y,w,h) in faces:
         cv2.rectangle(im,(x,y),(x+w,y+h),(225,0,0),2)
         Id, confidence = faceRecognizer.predict(gray[y:y+h,x:x+w])
-        profile = getProf(Id)
-        if(profile != None):
+        if(confidence < 50):
+            profile = getProf(Id)
             cv2.putText(im, str(profile[1]), (x,y-40), font, 2, (62,180,222), 3)
             insertIntoLogs(Id)
         else:

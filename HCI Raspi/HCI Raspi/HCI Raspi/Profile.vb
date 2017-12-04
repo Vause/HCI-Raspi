@@ -105,7 +105,7 @@ Public Class Profile
         End If
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) 
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         'Dim Instructions As Integer = MessageBox.Show("Tips: \n Turn your head slowly in each direction while the camera captures your movement \n Keep your head the same distance from the camera \n The camera will capture for about 3 seconds.", "caption", MessageBoxButtons.OKCancel)
         'If Instructions = DialogResult.OK Then
         '    Dim datasetDirectory As String = Application.StartupPath & "\dataset\"
