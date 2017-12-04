@@ -40,9 +40,10 @@ Partial Class Create
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(8, 70)
+        Me.Label1.Location = New System.Drawing.Point(6, 57)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(170, 20)
+        Me.Label1.Size = New System.Drawing.Size(142, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Employee First Name"
         '
@@ -50,9 +51,10 @@ Partial Class Create
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 140)
+        Me.Label2.Location = New System.Drawing.Point(6, 114)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(169, 20)
+        Me.Label2.Size = New System.Drawing.Size(142, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Employee Last Name"
         '
@@ -60,42 +62,47 @@ Partial Class Create
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(8, 214)
+        Me.Label3.Location = New System.Drawing.Point(6, 174)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(274, 20)
+        Me.Label3.Size = New System.Drawing.Size(231, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Employee Security Clearance Level"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 277)
+        Me.Button1.Location = New System.Drawing.Point(9, 225)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 50)
+        Me.Button1.Size = New System.Drawing.Size(112, 41)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(340, 277)
+        Me.Button2.Location = New System.Drawing.Point(255, 225)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 50)
+        Me.Button2.Size = New System.Drawing.Size(112, 41)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Next"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(314, 70)
+        Me.TextBox1.Location = New System.Drawing.Point(236, 57)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(170, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
         Me.TextBox1.TabIndex = 5
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(314, 138)
+        Me.TextBox2.Location = New System.Drawing.Point(236, 112)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(170, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
         Me.TextBox2.TabIndex = 6
         '
         'ComboBox1
@@ -104,18 +111,20 @@ Partial Class Create
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(314, 210)
+        Me.ComboBox1.Location = New System.Drawing.Point(236, 171)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(170, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
         Me.ComboBox1.TabIndex = 7
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(92, 17)
+        Me.Label4.Location = New System.Drawing.Point(69, 14)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(327, 29)
+        Me.Label4.Size = New System.Drawing.Size(251, 25)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Enter Employee Information"
         '
@@ -123,37 +132,40 @@ Partial Class Create
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(22, 100)
+        Me.Label5.Location = New System.Drawing.Point(16, 81)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(276, 17)
+        Me.Label5.Size = New System.Drawing.Size(185, 13)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Invalid input. Please enter only characters."
+        Me.Label5.Text = "Invalid input. Please enter only letters."
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.Red
-        Me.Label6.Location = New System.Drawing.Point(22, 174)
+        Me.Label6.Location = New System.Drawing.Point(16, 141)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(276, 17)
+        Me.Label6.Size = New System.Drawing.Size(185, 13)
         Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Invalid input. Please enter only characters."
+        Me.Label6.Text = "Invalid input. Please enter only letters."
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.Red
-        Me.Label7.Location = New System.Drawing.Point(22, 247)
+        Me.Label7.Location = New System.Drawing.Point(16, 201)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(361, 17)
+        Me.Label7.Size = New System.Drawing.Size(273, 13)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Invalid input. Please choose a number between 1 and 3."
         '
         'Create
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(502, 339)
+        Me.ClientSize = New System.Drawing.Size(376, 275)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -166,6 +178,7 @@ Partial Class Create
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Create"
         Me.Text = "Create"
         Me.ResumeLayout(False)

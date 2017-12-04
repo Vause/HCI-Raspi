@@ -24,32 +24,46 @@ Partial Class Log
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(362, 341)
+        Me.Button1.Location = New System.Drawing.Point(489, 275)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 36)
+        Me.Button1.Size = New System.Drawing.Size(150, 50)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Generate Log"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ListView1
         '
-        Me.ListView1.Location = New System.Drawing.Point(60, 41)
+        Me.ListView1.Location = New System.Drawing.Point(45, 33)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(743, 259)
+        Me.ListView1.Size = New System.Drawing.Size(558, 211)
         Me.ListView1.TabIndex = 2
         Me.ListView1.UseCompatibleStateImageBehavior = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(12, 274)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(150, 50)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Log
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(867, 413)
+        Me.ClientSize = New System.Drawing.Size(650, 336)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Log"
         Me.Text = "Log"
         Me.ResumeLayout(False)
@@ -57,4 +71,5 @@ Partial Class Log
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents Button2 As Button
 End Class

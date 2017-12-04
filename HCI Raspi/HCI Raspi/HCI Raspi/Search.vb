@@ -47,7 +47,6 @@ Public Class Search
 
     Private Sub Search_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
-        MessageBox.Show(Application.StartupPath & "\data\")
         Label3.Visible = False
         Label5.Visible = False
         Label6.Visible = False

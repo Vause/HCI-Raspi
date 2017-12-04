@@ -32,7 +32,6 @@ Partial Class Profile
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -42,52 +41,58 @@ Partial Class Profile
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.HCI_Raspi.My.Resources.Resources.diemster
-        Me.PictureBox2.Location = New System.Drawing.Point(27, 35)
+        Me.PictureBox2.Location = New System.Drawing.Point(20, 28)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(159, 169)
+        Me.PictureBox2.Size = New System.Drawing.Size(119, 137)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 372)
+        Me.Button1.Location = New System.Drawing.Point(9, 302)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 50)
+        Me.Button1.Size = New System.Drawing.Size(112, 41)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "&Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(524, 372)
+        Me.Button2.Location = New System.Drawing.Point(393, 302)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 50)
+        Me.Button2.Size = New System.Drawing.Size(112, 41)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "&Save"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(477, 83)
+        Me.TextBox1.Location = New System.Drawing.Point(358, 67)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(170, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
         Me.TextBox1.TabIndex = 7
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(477, 134)
+        Me.TextBox2.Location = New System.Drawing.Point(358, 109)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(170, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
         Me.TextBox2.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(234, 85)
+        Me.Label1.Location = New System.Drawing.Point(176, 69)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(170, 20)
+        Me.Label1.Size = New System.Drawing.Size(142, 17)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Employee First Name"
         '
@@ -95,9 +100,10 @@ Partial Class Profile
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(234, 184)
+        Me.Label2.Location = New System.Drawing.Point(176, 150)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(193, 20)
+        Me.Label2.Size = New System.Drawing.Size(163, 17)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Employee Security Level"
         '
@@ -105,9 +111,10 @@ Partial Class Profile
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(234, 134)
+        Me.Label3.Location = New System.Drawing.Point(176, 109)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(169, 20)
+        Me.Label3.Size = New System.Drawing.Size(142, 17)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Employee Last Name"
         '
@@ -115,44 +122,39 @@ Partial Class Profile
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.ComboBox1.Location = New System.Drawing.Point(477, 180)
+        Me.ComboBox1.Location = New System.Drawing.Point(358, 146)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(170, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(128, 21)
         Me.ComboBox1.TabIndex = 13
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(27, 238)
+        Me.Button3.Location = New System.Drawing.Point(20, 193)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(200, 50)
+        Me.Button3.Size = New System.Drawing.Size(150, 41)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "&Retake Profile Picture"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(238, 372)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(200, 50)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = "&Calibrate Facial Recognition"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(474, 35)
+        Me.Label4.Location = New System.Drawing.Point(356, 28)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 20)
+        Me.Label4.Size = New System.Drawing.Size(51, 17)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Label4"
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(524, 238)
+        Me.btnDelete.Location = New System.Drawing.Point(206, 301)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(150, 50)
+        Me.btnDelete.Size = New System.Drawing.Size(112, 41)
         Me.btnDelete.TabIndex = 17
         Me.btnDelete.Text = "&Delete Profile"
         Me.btnDelete.UseVisualStyleBackColor = True
@@ -161,21 +163,21 @@ Partial Class Profile
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(234, 35)
+        Me.Label5.Location = New System.Drawing.Point(176, 28)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(26, 20)
+        Me.Label5.Size = New System.Drawing.Size(21, 17)
         Me.Label5.TabIndex = 18
         Me.Label5.Text = "ID"
         '
         'Profile
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(686, 434)
+        Me.ClientSize = New System.Drawing.Size(514, 353)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label3)
@@ -186,6 +188,7 @@ Partial Class Profile
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Profile"
         Me.Text = "Profile"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -204,7 +207,6 @@ Partial Class Profile
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label5 As Label
