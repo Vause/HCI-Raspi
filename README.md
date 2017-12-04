@@ -1,4 +1,10 @@
 # HCI-Raspi
 Using facial recognition with the Raspberry pi
 
-Use this command to install drivers needed to use Raspi Camera with cv2: sudo modprobe bcm2835-v4l2
+
+Dependencies:
+	Python: Opencv, Opencv-contrib
+	VB: SQLite nuget package, Must be connected to HCIRaspi.db in server explorer
+	Folders to be created: data, dataset, recognizer
+To Run:
+	Run HCIRaspi.exe in "Debug" folder
