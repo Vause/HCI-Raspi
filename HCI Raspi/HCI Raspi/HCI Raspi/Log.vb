@@ -32,8 +32,8 @@ Public Class Log
         Next
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
-        Form1.Show()
+        Home.Show()
     End Sub
 End Class

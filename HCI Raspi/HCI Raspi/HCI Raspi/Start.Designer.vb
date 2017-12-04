@@ -32,10 +32,10 @@ Partial Class Start
         'btnManager
         '
         Me.btnManager.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnManager.Location = New System.Drawing.Point(38, 79)
-        Me.btnManager.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnManager.Location = New System.Drawing.Point(206, 176)
+        Me.btnManager.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnManager.Name = "btnManager"
-        Me.btnManager.Size = New System.Drawing.Size(154, 37)
+        Me.btnManager.Size = New System.Drawing.Size(205, 46)
         Me.btnManager.TabIndex = 0
         Me.btnManager.Text = "Manager Mode"
         Me.ToolTip1.SetToolTip(Me.btnManager, "Create and track employee profiles")
@@ -44,10 +44,10 @@ Partial Class Start
         'btnCapture
         '
         Me.btnCapture.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.btnCapture.Location = New System.Drawing.Point(38, 145)
-        Me.btnCapture.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCapture.Location = New System.Drawing.Point(206, 257)
+        Me.btnCapture.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCapture.Name = "btnCapture"
-        Me.btnCapture.Size = New System.Drawing.Size(154, 37)
+        Me.btnCapture.Size = New System.Drawing.Size(205, 46)
         Me.btnCapture.TabIndex = 1
         Me.btnCapture.Text = "Capture Mode"
         Me.ToolTip1.SetToolTip(Me.btnCapture, "Security camera mode")
@@ -57,22 +57,21 @@ Partial Class Start
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label1.Location = New System.Drawing.Point(26, 24)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(190, 109)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 25)
+        Me.Label1.Size = New System.Drawing.Size(242, 29)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Select Startup Mode"
         '
         'Start
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(236, 216)
+        Me.ClientSize = New System.Drawing.Size(612, 423)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCapture)
         Me.Controls.Add(Me.btnManager)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Start"
         Me.ResumeLayout(False)
         Me.PerformLayout()

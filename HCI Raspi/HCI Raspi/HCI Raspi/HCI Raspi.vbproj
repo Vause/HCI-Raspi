@@ -128,10 +128,10 @@
     <Compile Include="Finish.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instructions.Designer.vb">
@@ -167,12 +167,6 @@
     <Compile Include="Profile.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SaveChanges.Designer.vb">
-      <DependentUpon>SaveChanges.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SaveChanges.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Search.Designer.vb">
       <DependentUpon>Search.vb</DependentUpon>
     </Compile>
@@ -201,8 +195,8 @@
     <EmbeddedResource Include="Finish.resx">
       <DependentUpon>Finish.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.vb</DependentUpon>
@@ -218,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveChanges.resx">
-      <DependentUpon>SaveChanges.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.vb</DependentUpon>

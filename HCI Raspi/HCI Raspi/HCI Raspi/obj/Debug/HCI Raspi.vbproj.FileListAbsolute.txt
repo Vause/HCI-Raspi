@@ -84,7 +84,6 @@ C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Rasp
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Create.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.FaceCapture.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Finish.resources
-C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Form1.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Instructions.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Log.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Resources.resources
@@ -92,7 +91,6 @@ C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Rasp
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Search.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Start.resources
 C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.vbproj.GenerateResource.Cache
-C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
 C:\Users\dadio\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.SaveChanges.resources
 C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe.config
 C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\bin\Debug\HCI Raspi.exe
@@ -123,3 +121,4 @@ C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\o
 C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.exe
 C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.xml
 C:\Users\lance.willet\Documents\GitHub\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI Raspi.pdb
+C:\Users\Ruben\Desktop\CSCI 488\HCI-Raspi\HCI-Raspi\HCI Raspi\HCI Raspi\HCI Raspi\obj\Debug\HCI_Raspi.Home.resources

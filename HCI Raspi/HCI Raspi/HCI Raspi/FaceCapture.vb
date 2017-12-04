@@ -3,19 +3,19 @@ Public Class FaceCapture
     Dim con As New SQLite.SQLiteConnection
     Dim cmd As New SQLite.SQLiteCommand
     Dim p As New Process
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Create.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
+    Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         PictureBox1.Image.Dispose()
         PictureBox1.Image = Nothing
         Finish.Show()
         Me.Close()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
+    Private Sub btnRetake_Click(sender As Object, e As EventArgs) Handles btnRetake.Click
         PictureBox1.Image.Dispose()
         PictureBox1.Image = Nothing
         'System.Diagnostics.Process.Start(Application.StartupPath & "\try.py").WaitForExit()

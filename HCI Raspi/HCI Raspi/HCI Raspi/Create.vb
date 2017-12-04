@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SQLite
 Public Class Create
     Private Sub Create_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Form1.Hide()
+        Home.Hide()
         Me.CenterToScreen()
         lblFNameError.Visible = False
         lblLNameError.Visible = False
@@ -10,17 +10,17 @@ Public Class Create
         cboSecurity.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
-        Form1.Show()
+        Home.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         Instructions.Show()
         Me.Hide()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
+    Private Sub txtFName_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
         If (txtFName.Text = "" Or txtLName.Text = "" Or cboSecurity.Text = "") Then
             btnNext.Enabled = False
         Else
@@ -35,7 +35,7 @@ Public Class Create
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
+    Private Sub txtLName_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
         If (txtLName.Text = "" Or txtFName.Text = "" Or cboSecurity.Text = "") Then
             btnNext.Enabled = False
         Else
@@ -49,7 +49,7 @@ Public Class Create
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboSecurity.SelectedIndexChanged
+    Private Sub cboSecurity_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboSecurity.SelectedIndexChanged
         If (cboSecurity.Text = "" Or txtFName.Text = "" Or txtLName.Text = "") Then
             btnNext.Enabled = False
         Else

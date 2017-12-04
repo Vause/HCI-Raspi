@@ -4,12 +4,12 @@ Public Class Search
     Public First As String
     Public Last As String
     Public SL As String
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
-        Form1.Show()
+        Home.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         Dim con As New SQLite.SQLiteConnection
         Dim cmd As New SQLite.SQLiteCommand
         Try
@@ -47,10 +47,10 @@ Public Class Search
         lblLNameError.Visible = False
         lblSecurityError.Visible = False
         btnSearch.Enabled = False
-        Form1.Hide()
+        Home.Hide()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
+    Private Sub txtFName_TextChanged(sender As Object, e As EventArgs) Handles txtFName.TextChanged
         If (txtFName.Text = "" Or txtLName.Text = "" Or txtSecurity.Text = "") Then
             btnSearch.Enabled = False
         Else
@@ -66,7 +66,7 @@ Public Class Search
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
+    Private Sub txtLName_TextChanged(sender As Object, e As EventArgs) Handles txtLName.TextChanged
         If (txtLName.Text = "" Or txtFName.Text = "" Or txtSecurity.Text = "") Then
             btnSearch.Enabled = False
         Else
@@ -80,7 +80,7 @@ Public Class Search
         End If
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles txtSecurity.TextChanged
+    Private Sub txtSecurity_TextChanged(sender As Object, e As EventArgs) Handles txtSecurity.TextChanged
         If (txtSecurity.Text = "" Or txtFName.Text = "" Or txtLName.Text = "") Then
             btnSearch.Enabled = False
         Else

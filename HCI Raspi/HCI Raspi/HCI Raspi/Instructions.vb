@@ -1,5 +1,5 @@
 ﻿Public Class Instructions
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
         Me.Close()
         FaceCapture.Show()
     End Sub
